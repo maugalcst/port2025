@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --background-first: #060606;
+  --orange-site: #FF8228;
+  --purple-site: #7986FB; 
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
