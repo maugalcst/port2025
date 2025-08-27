@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar glass-effect">
   <div class="nav-elements">
     <div class="logo"><img src="maugal_.svg" alt="maugal_"></div>
     <ul class="nav-links">
@@ -10,6 +10,8 @@
   </div>
 </nav>
 
+<div class="blurred-circle"></div>
+
 <section class="hero">
   <div class="background">
     <video autoplay muted loop id="bgVideo">
@@ -17,12 +19,12 @@
     </video>
       <div class="hero-container">
         <div class="hero-left">
-          <img src="" alt="" class="profile-pic" />
+          <img src="temppic.jpg" alt="my profile pic" class="profile-pic" />
           <div class="socials">
             <ul>
-              <li class="social"><i class="linkedin"></i>LinkedIn</li>
-              <li class="social"><i class="email"></i>Email</li>
-              <li class="social"><i class="github"></i>Github</li>
+              <li class="social"><box-icon name='linkedin-square' type='logo' ></box-icon><span>LinkedIn</span></li>
+              <li class="social"><box-icon type='logo' name='gmail'></box-icon><span>Email</span></li>
+              <li class="social"><box-icon name='github' type='logo' ></box-icon><span>GitHub</span></li>
             </ul>
           </div>
         </div>
@@ -35,7 +37,7 @@
           </h2>
           <h4>Beyond my work, I'm interested in personal finance and investing. I also enjoy staying active through sports like tennis and hiking in 🇲🇽, and I love to unwind with music and video games. This portfolio is a look into my work and my hobbies.</h4>
           <button class="contact-me-hero">
-            Contact me! <i class="paper-plane"></i>
+            <span>Contact me! </span><box-icon name='paper-plane'></box-icon>
           </button>
         </div>
       </div>
@@ -97,4 +99,14 @@
     </div>
   </div>
 
+</section>
+
+<section class="work-experience">
+  <div class="upper-light"></div>
+  <h1 class="work-title">WORK <box-icon name='briefcase-alt-2' ></box-icon><br><span>EXPERIENCE</span></h1>
+  <div class="work-bg">
+    <video autoplay muted loop id="bgVideo2">
+      <source src="final_video.mp4" type="video/mp4" />
+    </video>
+  </div>
 </section>

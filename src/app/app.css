@@ -1,21 +1,25 @@
 
-/* --- Estilos para la barra de navegación --- */
 .navbar {
     height: 90px;
-    width: 100vw;
-    background-color: var(--background-first);
+    width: 100%;
+    background-color: rgba(4, 4, 4, 0.645);
     position: fixed;
+    z-index: 2;
     
+}
+
+.glass-effect {
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
 }
 
 .nav-elements {
     display: flex;
     flex-direction: row;
-    
 }
 
 .logo {
-    position: relative;
+    position: absolute;
     padding: 35px;
 }
 
@@ -31,22 +35,227 @@
 
 }
 
-.home-nav, .projects-nav, .briefcase-nav, .wrench-nav {
-    color: white;
-    background-color: white;
+li, ul {
+    text-decoration: none;
+    list-style-type: none;
 }
 
-/* --- Estilos para la sección de bienvenida --- */
+.nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.nav-links box-icon {
+    fill: white;
+    transform: scale(1.5);
+    transition: 0.3s ease;
+}
+
+.nav-links box-icon:hover {
+    fill: var(--orange-site);
+    transform: scale(1.43);
+}
+
+.blurred-circle {
+    width: 650px;
+    height: 400px;
+    background: linear-gradient(
+        100deg, 
+        var(--orange-site) 0%, 
+        #2436FF 100%);
+    border-radius: 50%;
+    filter: blur(250px);
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    opacity: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#bgVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 40%;
+}
+
 .hero {
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh);
+    padding: 20px; 
+    
 }
 
-/* temporal */
-.background {
-    background-image: url('../../public/prueba.jpg'); 
+.hero-container {
+    background-color: #06060682;
+    border-radius: 20px; 
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 90%;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(218, 218, 218, 0.068);
+    
+    display: flex;
+    gap: 30px; 
+    align-items: center; 
 }
 
-/* --- Estilos para la sección de proyectos --- */
+.profile-pic {
+    height: 190px;
+    margin: 30px;
+}
+
+.social box-icon {
+    fill: white;
+    margin: 10px;
+    transform: scale(1.4);
+}
+
+.socials span {
+    color: white;
+    position: relative;
+    font-size: 18px;
+    bottom: 5px;
+    left: 5px;
+}
+
+.socials {
+    text-decoration: none;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    position: relative;
+    bottom: 30px;
+}
+
+.hero-right h3, h1, h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: aliceblue;
+}
+
+.hero-right h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-right h1 {
+    font-size: 52px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-right h2 {
+    font-family: "JetBrains Mono", sans-serif;
+    color: aliceblue;
+    font-size: 19px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.hero-right h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    opacity: 40%;
+    
+}
+
+.hero-right h1 span {
+    background: linear-gradient(
+    90deg, 
+    var(--orange-site) 0%, 
+    var(--purple-site) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.hero-right button {
+    background-color: #0C0C0C;
+    border: 1px solid #6C6C6C;
+    height: 45px;
+    width: 160px;
+    border-radius: 12px;
+    color: white;
+    text-align: left;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    padding-left: 15px;
+    float: inline-end;
+    position: relative;
+    top: 30px;
+}
+
+.hero-right button span {
+    position: relative;
+    bottom: 5px;
+}
+
+.hero-right button box-icon {
+    position: relative;
+    fill: white;
+    left: 18px;
+    top: 2px;
+}
+
+.hero-right button:hover {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.hero-right button:hover box-icon {
+    fill: black;
+    left: 21px;
+    top: -1px;
+    transition: 0.2s ease;
+}
+
+
+
+
 .recent-projects {
-  
+    background-color: aliceblue;
 }
+
+.work-experience {
+    background: linear-gradient(
+        180deg,
+        #0C0C0C 0%,
+        #000000 100%
+    );
+    min-height: calc(100vh);
+    padding: 20px; 
+}
+
+.work-bg {
+    position: relative; 
+    min-height: 500px; 
+    overflow: hidden; 
+}
+
+.work-bg video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+

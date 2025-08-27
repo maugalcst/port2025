@@ -7,6 +7,16 @@
 }
 
 html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg, 
+    rgb(16, 17, 21) 0%, 
+    rgb(0, 0, 0) 100%);
 }
+
+
