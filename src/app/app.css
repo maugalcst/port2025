@@ -111,12 +111,23 @@ li, ul {
 .profile-pic {
     height: 190px;
     margin: 30px;
+    border-radius: 15px;
 }
 
 .social box-icon {
     fill: white;
     margin: 10px;
     transform: scale(1.4);
+}
+
+.social {
+    width: 85%;
+}
+
+.social:hover {
+    background: #20202033;
+    border-radius: 15px;
+    transition: 0.3s ease;
 }
 
 .socials span {
@@ -133,6 +144,10 @@ li, ul {
     font-family: "Plus Jakarta Sans", sans-serif;
     position: relative;
     bottom: 30px;
+}
+
+.socials a {
+    text-decoration: none;
 }
 
 .hero-right h3, h1, h4 {
@@ -226,12 +241,13 @@ li, ul {
     color: rgb(0, 0, 0);
     font-weight: 700;
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
 .hero-right button:hover box-icon {
     fill: black;
     left: 21px;
-    top: -1px;
+    top: 0px;
     transition: 0.2s ease;
 }
 
