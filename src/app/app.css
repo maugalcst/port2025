@@ -172,6 +172,15 @@ li, ul {
     
 }
 
+.mx-flag {
+    position: relative;
+    height: 22px;
+    width: auto;
+    top: 5px;
+    padding: 0;
+    margin: 0;
+}
+
 .hero-right h1 span {
     background: linear-gradient(
     90deg, 
@@ -196,7 +205,7 @@ li, ul {
     padding-left: 15px;
     float: inline-end;
     position: relative;
-    top: 30px;
+    top: 10px;
 }
 
 .hero-right button span {
