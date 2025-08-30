@@ -209,7 +209,7 @@ li, ul {
 
 .hero-right button {
     background-color: #0C0C0C;
-    border: 1px solid #6C6C6C;
+    border: 1.5px solid #6C6C6C;
     height: 45px;
     width: 160px;
     border-radius: 12px;
@@ -258,11 +258,15 @@ li, ul {
     background-color: aliceblue;
 }
 
+
+
+
+
 .work-experience {
     background: linear-gradient(
         180deg,
-        #0C0C0C 0%,
-        #000000 100%
+        #a4a4a4 0%,
+        #969696 100%
     );
     min-height: calc(100vh);
     padding: 20px; 
@@ -282,5 +286,7 @@ li, ul {
     width: 100%;
     height: auto;
     z-index: 1;
+
+    display: none;
 }
 
