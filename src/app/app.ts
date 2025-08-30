@@ -1,6 +1,6 @@
 import { Component, signal, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { WorkCard } from './components/work-card/work-card.ts';
+import { WorkCard } from './components/work-card/work-card';
 
 @Component({
   selector: 'app-root',
