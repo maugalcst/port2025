@@ -198,9 +198,10 @@ li, ul {
 
 .hero-right h1 span {
     background: linear-gradient(
-    90deg, 
-    var(--orange-site) 0%, 
-    var(--purple-site) 100%);
+        90deg, 
+        var(--orange-site) 0%, 
+        var(--purple-site) 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -264,13 +265,26 @@ li, ul {
 
 .work-experience {
     position: relative;
+    min-height: calc(100vh);
+    padding: 120px;
+    padding-left: 200px;
+    padding-right: 200px;
+    z-index: 1; /* Agregamos un z-index para que sea una capa de referencia */
+}
+
+.work-experience::before {
+    content: ''; /* El 'content' es necesario para que el pseudo-elemento aparezca */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(
         180deg,
         #141414 0%,
         #080808 100%
-    ); 
-    min-height: calc(100vh);
-    padding: 120px; 
+    );
+    z-index: -2; /* Lo ponemos debajo del video */
 }
 
 .work-bg-video {
@@ -280,8 +294,8 @@ li, ul {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 0;
   opacity: 40%;
+  z-index: -1;
 }
 
 .work-bg-video video {
@@ -289,3 +303,51 @@ li, ul {
   min-height: 100%;
   object-fit: fill;
 }
+
+.upper-light {
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(
+        100deg, 
+        var(--orange-site) 0%, 
+        #2436FF 100%);
+    border-radius: 50%;
+    filter: blur(180px);
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    opacity: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.work-title {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.work-title box-icon {
+    fill: #ffffff;
+    transform: scale(1.4);
+}
+
+.work-title span {
+    background: linear-gradient(
+        90deg, 
+        var(--orange-site) 0%, 
+        var(--purple-site) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.work-cards-container {
+    background-color: #060606;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid #181818;
+    border-radius: 20px;
+}
+
