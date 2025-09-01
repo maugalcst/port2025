@@ -1,19 +1,24 @@
 <div class="job">
     <div class="job-left">
         <div class="job-image-bg"></div>
-        <h2 class="job-name">Epicor Software</h2>
-        <h3 class="job-time"></h3>
+        <h2 class="job-name">{{ companyName }}</h2>
+        <h3 class="job-time">{{ companyDuration }}</h3>
     </div>
     <div class="job-separator"></div>
     <div class="job-right">
-        <h3 class="job-position">QA Developer Intern</h3>
-        <p class="job-desc">As a QA Developer Intern at Epicor, I specialize in test automation using WebdriverIO. My focus is on building and maintaining robust testing frameworks to ensure high-quality, reliable software.</p>
+        <h3 class="job-position">{{ jobPosition }}</h3>
+        <p class="job-desc">{{ jobDescription }}</p>
     </div>
-    <div class="job-stack">
-        <div class="stack1">WebdriverIO</div>
-        <div class="stack2">Jira</div>
-        <div class="stack3">Azure DevOps</div>
-        <div class="stack4">Git</div>
-        <div class="stack5">Zephyr</div>
-    </div>
+    @if (technologies.length > 0) {
+        <div class="job-stack">
+            @for (technology of technologies; track technology) {
+                <div class="stack-item">
+                    {{ technology }}
+                </div>
+            }
+        </div>
+    } @else {
+        
+    }
+    
 </div>
