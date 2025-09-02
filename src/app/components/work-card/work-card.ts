@@ -13,4 +13,5 @@ export class WorkCard {
   @Input() jobPosition: string = '';
   @Input() jobDescription: string = '';
   @Input() technologies: string[] = [];
+  @Input() companyLogo: string = '';
 }

@@ -1,0 +1,63 @@
+.job {
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1a1a1a;
+    padding: 50px;
+    border-radius: 12px;
+    gap: 20px;
+}
+
+.job-left {
+    display: flex;
+    gap: 30px;
+}
+
+.job-name-time {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    position: relative;
+    top: 10px;
+}
+
+.job-name, .job-time, .job-position, .job-desc {
+    font-family: 'Plus Jakarta Sans';
+    color: white;
+}
+
+.job-name {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.job-time {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0;
+    opacity: 40%;
+}
+
+.job-stack {
+    font-family: 'Plus Jakarta Sans';
+    color: rgba(255, 255, 255, 0.519);
+
+}
+
+.company-logo {
+    height: 130px;
+    width: auto;
+}
+
+.job-separator {
+    position: relative;
+    width: 1px;
+    height: 170px;
+    background-color: white;
+    margin: 23px;
+    top: 50%;
+}

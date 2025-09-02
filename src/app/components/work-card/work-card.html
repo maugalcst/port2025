@@ -1,8 +1,14 @@
 <div class="job">
     <div class="job-left">
-        <div class="job-image-bg"></div>
-        <h2 class="job-name">{{ companyName }}</h2>
-        <h3 class="job-time">{{ companyDuration }}</h3>
+        <div class="job-image-bg">
+            @if (companyLogo) {
+                <img [src]="companyLogo" alt="Company Logo" class="company-logo">
+            }
+        </div>
+        <div class="job-name-time">
+            <h2 class="job-name">{{ companyName }}</h2>
+            <h3 class="job-time">{{ companyDuration }}</h3>
+        </div>
     </div>
     <div class="job-separator"></div>
     <div class="job-right">
