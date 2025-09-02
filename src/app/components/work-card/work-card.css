@@ -42,6 +42,16 @@
     opacity: 40%;
 }
 
+.job-position {
+    font-size: 22px;
+    margin: 0;
+}
+
+.job-desc {
+    font-size: 15px;
+    margin: 5;
+}
+
 .job-stack {
     font-family: 'Plus Jakarta Sans';
     color: rgba(255, 255, 255, 0.519);
