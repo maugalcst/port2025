@@ -305,14 +305,14 @@ li, ul {
 }
 
 .upper-light {
-    width: 320px;
-    height: 320px;
+    width: 620px;
+    height: 620px;
     background: linear-gradient(
         100deg, 
         var(--orange-site) 0%, 
         #2436FF 100%);
     border-radius: 50%;
-    filter: blur(180px);
+    filter: blur(280px);
     position: absolute;
     left: 50%;
     top: 0%;
