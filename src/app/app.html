@@ -117,6 +117,7 @@
     @for (job of workExperience; track job.companyName) {
       <app-work-card 
         [companyName]="job.companyName"
+        [cardTheme]="job.cardTheme ?? ''"
         [companyDuration]="job.companyDuration"
         [jobPosition]="job.jobPosition"
         [jobDescription]="job.jobDescription"

@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-work-card',
-  imports: [CommonModule],
+  imports: [CommonModule, NgClass],
   templateUrl: './work-card.html',
   styleUrl: './work-card.css'
 })
@@ -14,4 +14,5 @@ export class WorkCard {
   @Input() jobDescription: string = '';
   @Input() technologies: string[] = [];
   @Input() companyLogo: string = '';
+  @Input() cardTheme: string = '';
 }

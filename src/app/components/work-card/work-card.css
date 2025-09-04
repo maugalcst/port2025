@@ -3,10 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #131313;
     padding: 50px;
+    border: 1px solid #262626;
     border-radius: 12px;
     gap: 20px;
+}
+
+.epicor-card {
+  background: linear-gradient(270deg, #06060650 0%, #000A0D 100%) !important;
+}
+
+.banorte-card {
+  background: linear-gradient(270deg, #06060650 0%, #30080852 100%) !important;
 }
 
 .job-left {
@@ -66,8 +74,8 @@
 .job-separator {
     position: relative;
     width: 1px;
-    height: 170px;
-    background-color: white;
+    height: 190px;
+    background-color: #262626;
     margin: 23px;
     top: 50%;
 }
