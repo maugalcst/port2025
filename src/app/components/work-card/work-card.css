@@ -109,4 +109,5 @@
     padding-left: 22px;
     padding-right: 22px;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
