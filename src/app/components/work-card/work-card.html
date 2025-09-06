@@ -14,8 +14,7 @@
     <div class="job-right">
         <h3 class="job-position">{{ jobPosition }}</h3>
         <p class="job-desc">{{ jobDescription }}</p>
-    </div>
-    @if (technologies.length > 0) {
+        @if (technologies.length > 0) {
         <div class="job-stack">
             @for (technology of technologies; track technology) {
                 <div class="stack-item">
@@ -24,4 +23,5 @@
             }
         </div>
     } @else {}
+    </div>
 </div>

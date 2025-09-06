@@ -26,7 +26,7 @@ export class App {
       companyDuration: 'Jun 2025 - Present',
       jobPosition: 'QA Developer Intern',
       jobDescription: 'As a QA Developer Intern at Epicor, I specialize in test automation using WebdriverIO. My focus is on building and maintaining robust testing frameworks to ensure high-quality, reliable software.',
-      technologies: ['WebdriverIO', 'Jiraa', 'Git', 'Zephyr', 'Azure DevOps'],
+      technologies: ['WebdriverIO', 'Jiraa', 'Git', 'Zephyr', 'Azure DevOps', 'Postman', 'JavaScript'],
       companyLogo: "/epicor_logo.png",
       cardTheme: 'epicor-card'
     },

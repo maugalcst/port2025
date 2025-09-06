@@ -1,5 +1,5 @@
 .job {
-    margin: 100px;
+    margin: 50px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -10,11 +10,11 @@
 }
 
 .epicor-card {
-  background: linear-gradient(270deg, #06060650 0%, #000A0D 100%) !important;
+  background: linear-gradient(270deg, #06060626 30%, #000a0d9d 100%) !important;
 }
 
 .banorte-card {
-  background: linear-gradient(270deg, #06060650 0%, #30080852 100%) !important;
+  background: linear-gradient(270deg, #06060626 30%, #30080852 100%) !important;
 }
 
 .job-left {
@@ -56,7 +56,7 @@
 }
 
 .job-desc {
-    font-size: 15px;
+    font-size: 16px;
     margin: 5;
 }
 
@@ -74,8 +74,39 @@
 .job-separator {
     position: relative;
     width: 1px;
-    height: 190px;
+    height: 160px;
     background-color: #262626;
     margin: 23px;
     top: 50%;
+}
+
+.job-stack {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    top: 250px;
+    gap: 10px;
+}
+
+.stack-item {
+    background-color: rgba(27, 27, 27, 0.281);
+    border: 1px solid rgba(183, 183, 183, 0.262);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.474);
+    font-size: 13px;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stack-item:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(183, 183, 183, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    padding: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    transition: 0.2s ease-in-out;
 }
