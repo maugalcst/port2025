@@ -251,9 +251,103 @@ li, ul {
 }
 
 
+.recent-projects {
+    background-color: #06060682;
+    margin: 0;
+    padding: 120px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
 
+.rp-title {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 36px;
+    
+}
 
+.rp-title box-icon {
+    fill: #ffffff;
+    transform: scale(1.5);
+    margin-left: 5px;
+}
 
+.rp-title2 {
+    background: linear-gradient(
+        90deg, 
+        var(--orange-site) 0%, 
+        var(--purple-site) 11%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 900;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.direction-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left-arrow, .right-arrow {
+    background-color: #0C0C0C;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #272727;
+    align-content: center;
+    position: relative;
+}
+
+.left-arrow box-icon, 
+.right-arrow box-icon {
+    fill: white;
+    transform: scale(calc(1.5));
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 18px;
+    top: 2px;
+}
+
+.controls-separator {
+    width: 1px;
+    height: 60px;
+    background-color: #272727;
+    border-radius: 50px;
+}
+
+.visitme-projects-button {
+    background-color: #0C0C0C;
+    border-radius: 50px;
+    border: 2px solid #272727;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 180px;
+}
+
+.visitme-projects-button box-icon {
+    fill: white;
+    transform: scale(calc(2));
+    margin-left: 28px;
+    position: relative;
+    top: 2px;
+}
 
 
 .work-experience {

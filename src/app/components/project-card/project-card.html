@@ -1,12 +1,16 @@
 <div class="project">
     <div class="image-bg">
-        <img src="" alt="" class="project1-img">
+        <img [src]="projectImage" alt="epicor-image" class="project-img epicor-img">
     </div>
-        <h2 class="project-name">GasTrack</h2>
-        <p class="project-desc">GasTrack is a mobile app designed for <span>Vixomedia</span> to track vehicle fuel efficiency and store performance reports. It streamlines monitoring gas usage and ensures detailed, organized data for fleet management.</p>
+        <h2 class="project-name">{{ projectName }}</h2>
+        <p class="project-desc">{{ projectDescription }}</p>
         <div class="project-stack">
-            <div class="flutter"><box-icon name='flutter' type='logo' ></box-icon>Flutter</div>
-            <div class="firebase"><box-icon name='firebase' type='logo' ></box-icon>Firebase</div>
+        @for (tech of projectStack; track tech.name) {
+            <div class="tech-item">
+                <box-icon [name]="tech.icon" type='logo'></box-icon>
+                <span>{{ tech.name }}</span>
+            </div>
+        }
         </div>
     <div class="see-repo"><box-icon name='link-external'></box-icon></div>
 </div>

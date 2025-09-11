@@ -1,4 +1,5 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
+import { Technology } from '../../app';
 
 @Component({
   selector: 'app-project-card',
@@ -8,5 +9,9 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProjectCard {
+  @Input() projectImage: string = '';
+  @Input() projectName: string = '';
+  @Input() projectDescription: string = '';
+  @Input() projectStack: Technology[] = [];
 
 }

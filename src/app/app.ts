@@ -12,12 +12,12 @@ interface Job {
   cardTheme?: string;
 }
 
-interface Technology {
+export interface Technology {
   icon: string;
   name: string;
 }
 
-interface Project {
+export interface Project {
   projectImage: string;
   projectName: string;
   projectDescription: string;
