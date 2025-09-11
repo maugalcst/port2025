@@ -19,7 +19,7 @@
     </video>
       <div class="hero-container">
         <div class="hero-left">
-          <img src="temppic.jpg" alt="my profile pic" class="profile-pic" />
+          <img src="me.png" alt="my profile pic" class="profile-pic" />
           <div class="socials">
             <ul class="social-links">
               <li class="social"><a href="https://www.linkedin.com/in/mauricio-gallegos-castillo-4b9503288/" target="_blank"><box-icon name='linkedin-square' type='logo' ></box-icon><span>LinkedIn</span></a></li>
@@ -48,7 +48,7 @@
 
 <section class="recent-projects">
   <h1 class="rp-title">RECENT <box-icon type='solid' name='package' class="projects-title"></box-icon><br></h1>
-  <h1 class="rp-title">PROJECTS</h1>
+  <h1 class="rp-title title-projects">PROJECTS</h1>
   <div class="controls">
     <div class="direction-buttons">
       <div class="left-arrow"><box-icon name='chevron-left'></box-icon></div>
@@ -61,18 +61,15 @@
   <div class="shadow"></div>
   
   <div class="projects-container">
-    <div class="project">
-      <div class="image-bg">
-        <img src="" alt="" class="project1-img">
-      </div>
-      <h2 class="project-name">GasTrack</h2>
-      <p class="project-desc">GasTrack is a mobile app designed for <span>Vixomedia</span> to track vehicle fuel efficiency and store performance reports. It streamlines monitoring gas usage and ensures detailed, organized data for fleet management.</p>
-      <div class="project-stack">
-        <div class="flutter"><box-icon name='flutter' type='logo' ></box-icon>Flutter</div>
-        <div class="firebase"><box-icon name='firebase' type='logo' ></box-icon>Firebase</div>
-      </div>
-      <div class="see-repo"><box-icon name='link-external'></box-icon></div>
-    </div>
+
+    @for (project of projects; track project.projectName) {
+      <app-project-card
+        [projectImage]="project.projectImage"
+        [projectName]="project.projectName"
+        [projectDescription]="project.projectDescription"
+        [projectStack]="project.projectStack ?? []">
+      </app-project-card>
+    }
 
     <div class="project">
       <div class="image-bg">

@@ -1,0 +1,33 @@
+.recent-projects {
+    background-color: #06060682;
+    margin: 0;
+    padding: 120px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.rp-title {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 36px;
+    
+}
+
+.rp-title box-icon {
+    fill: #ffffff;
+    transform: scale(1.5);
+    margin-left: 5px;
+}
+
+.title-projects {
+    background: linear-gradient(
+        90deg, 
+        var(--orange-site) 0%, 
+        var(--purple-site) 11%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
