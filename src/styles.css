@@ -3,7 +3,7 @@
   --background-first: #060606;
   --orange-site: #FF8228;
   --purple-site: #7986FB; 
-
+  --highlight: #0000FF;
 }
 
 html, body {
@@ -16,7 +16,13 @@ html, body {
   background: linear-gradient(
     180deg, 
     rgb(16, 17, 21) 0%, 
-    rgb(0, 0, 0) 100%);
+    rgb(0, 0, 0) 100%
+  );
+}
+
+::selection {
+  background-color: var(--highlight);
+  color: #ffffff;
 }
 
 

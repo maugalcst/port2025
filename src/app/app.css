@@ -4,7 +4,7 @@
     width: 100%;
     background-color: rgba(4, 4, 4, 0.645);
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     
 }
 
@@ -289,11 +289,17 @@ li, ul {
     margin: 0;
 }
 
+.rp-title, .rp-title2 {
+    position: relative;
+    top: 70px;
+}
+
 .controls {
     display: flex;
     flex-direction: row-reverse;
     gap: 30px;
     margin-top: 30px;
+    margin-right: 160px;
 }
 
 .direction-buttons {
@@ -307,7 +313,7 @@ li, ul {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 2px solid #272727;
+    border: 1px solid #272727;
     align-content: center;
     position: relative;
 }
@@ -325,7 +331,9 @@ li, ul {
 
 .controls-separator {
     width: 1px;
-    height: 60px;
+    height: 40px;
+    position: relative;
+    top: 10px;
     background-color: #272727;
     border-radius: 50px;
 }
@@ -333,7 +341,7 @@ li, ul {
 .visitme-projects-button {
     background-color: #0C0C0C;
     border-radius: 50px;
-    border: 2px solid #272727;
+    border: 1px solid #272727;
     color: white;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 18px;
@@ -349,6 +357,26 @@ li, ul {
     top: 2px;
 }
 
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.shadow {
+    background-color: #000000;
+    box-shadow: 0 0 300px 200px rgba(0, 0, 0, 0.975);
+    position: absolute;
+    width: 0px;
+    height: 80vh;
+    right: 0;
+    z-index: 2;
+}
+
+
+
+
+/* WORK EXPERIENCE SECTION */
 
 .work-experience {
     position: relative;

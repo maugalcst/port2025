@@ -1,0 +1,44 @@
+.project {
+    background-color: #0C0C0C;
+    border: 1px solid #272727;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 30px;
+    min-height: 42rem;
+}
+
+.project-img {
+    height: 360px;
+}
+
+.image-bg {
+    background-color: #151515;
+    border: 1px solid #474747;
+    border-radius: 20px;
+    height: fit-content;
+    width: auto;
+    padding: 15px;
+}
+
+.project-name, .project-desc { 
+    position: relative;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 20px;
+    top: 5px;
+}
+
+.project-name {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.project-stack {
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-item {
+    background-color: #121212;
+    border: 1px solid #474747;
+}
