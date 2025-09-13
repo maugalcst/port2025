@@ -36,9 +36,17 @@
 .project-stack {
     display: flex;
     flex-direction: row;
+    margin-left: 20px;
+    gap: 15px;
 }
 
 .tech-item {
     background-color: #121212;
     border: 1px solid #474747;
+    border-radius: 10px;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    fill: white;
 }
