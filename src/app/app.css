@@ -4,8 +4,7 @@
     width: 100%;
     background-color: rgba(4, 4, 4, 0.645);
     position: fixed;
-    z-index: 4;
-    
+    z-index: 10;
 }
 
 .glass-effect {
@@ -252,11 +251,17 @@ li, ul {
 
 
 .recent-projects {
-    background-color: #090909;
+    position: relative;
+    background: linear-gradient(
+        180deg, 
+        #090909 0%, 
+        #0f0d0db1 100%
+    );
     margin: 0;
     padding: 120px;
     padding-left: 150px;
     padding-right: 150px;
+    z-index: 2;
 }
 
 .rp-title {
@@ -365,12 +370,12 @@ li, ul {
 
 .shadow {
     background-color: #000000;
-    box-shadow: 0 0 300px 200px rgba(0, 0, 0, 0.975);
+    box-shadow: 0 0 300px 250px rgba(4, 4, 4, 0.975);
     position: absolute;
     width: 0px;
-    height: 80vh;
+    height: 900vh;
     right: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 
@@ -430,7 +435,7 @@ li, ul {
     filter: blur(280px);
     position: absolute;
     left: 50%;
-    top: 0%;
+    top: -10%;
     opacity: 80%;
     transform: translate(-50%, -50%);
     z-index: -1;

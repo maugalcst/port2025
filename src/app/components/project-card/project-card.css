@@ -33,6 +33,11 @@
     font-weight: 900;
 }
 
+.project-desc {
+    font-size: 15px;
+    font-weight: 300;
+}
+
 .project-stack {
     display: flex;
     flex-direction: row;
@@ -49,4 +54,37 @@
     font-weight: 600;
     font-size: 14px;
     fill: white;
+    display: flex; 
+    align-items: center;
+    gap: 5px; 
+    padding: 5px 10px;
+}
+
+.tech-item i {
+    height: 20px;
+    width: 20px;
+
+    font-size: 18px !important;
+    line-height: 1 !important;
+    color: white;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.see-repo {
+  font-size: 25px !important;
+  font-weight: 200;
+  line-height: 1 !important;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 15px;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.see-repo i:hover {
+  color: var(--purple-site);
+  transition: 0.2s ease;
 }

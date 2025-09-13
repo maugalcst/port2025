@@ -7,10 +7,10 @@
         <div class="project-stack">
         @for (tech of projectStack; track tech.name) {
             <div class="tech-item">
-                <box-icon [name]="tech.icon" type='logo'></box-icon>
+                <i class="bx bxl-{{ tech.icon }}"></i>
                 <span>{{ tech.name }}</span>
             </div>
         }
-        <div class="see-repo"><box-icon name='link-external'></box-icon></div>
         </div>
+        <div class="see-repo"><i class='bx bx-link-external'></i></div>
 </div>
