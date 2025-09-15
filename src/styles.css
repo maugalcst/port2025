@@ -18,6 +18,10 @@ html, body {
     rgb(16, 17, 21) 0%, 
     rgb(0, 0, 0) 100%
   );
+
+  overflow-y: scroll;
+  scrollbar-color: rgb(255, 255, 255) rgb(6, 6, 6);
+  scrollbar-width: thin;
 }
 
 ::selection {

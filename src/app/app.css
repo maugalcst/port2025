@@ -119,12 +119,14 @@ li, ul {
 
 .social {
     width: 85%;
+    transition: 0.3s;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .social:hover {
     background: #20202033;
     border-radius: 15px;
-    transition: 0.3s ease;
 }
 
 .socials span {
@@ -181,7 +183,6 @@ li, ul {
     font-weight: 400;
     margin-top: 20px;
     opacity: 40%;
-    
 }
 
 .mx-flag {
@@ -254,14 +255,15 @@ li, ul {
     position: relative;
     background: linear-gradient(
         180deg, 
-        #090909 0%, 
-        #0f0d0db1 100%
+        #060606 0%, 
+        #0f0d0dc8 100%
     );
     margin: 0;
     padding: 120px;
     padding-left: 150px;
     padding-right: 150px;
     z-index: 2;
+    overflow: hidden;
 }
 
 .rp-title {
@@ -321,6 +323,8 @@ li, ul {
     border: 1px solid #272727;
     align-content: center;
     position: relative;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .left-arrow box-icon, 
@@ -347,19 +351,33 @@ li, ul {
     background-color: #0C0C0C;
     border-radius: 50px;
     border: 1px solid #272727;
+    width: 180px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.visitme-projects-button:hover,
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: #1d1d1d;
+}
+
+.visitme-projects-button p {
     color: white;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 18px;
     font-weight: 500;
-    width: 180px;
 }
 
 .visitme-projects-button box-icon {
     fill: white;
     transform: scale(calc(2));
-    margin-left: 28px;
-    position: relative;
-    top: 2px;
 }
 
 .projects-container {
@@ -368,14 +386,34 @@ li, ul {
     gap: 25px;
 }
 
-.shadow {
-    background-color: #000000;
-    box-shadow: 0 0 300px 250px rgba(4, 4, 4, 0.975);
+.shadow-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+  box-shadow: -10px 0 150px 200px rgb(0, 0, 0);
+  z-index: 3;
+}
+
+.white-line {
+    background: linear-gradient(
+        90deg, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.781) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    height: 1px;
+    width: 800px;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    width: 0px;
-    height: 900vh;
-    right: 0;
-    z-index: 3;
+    bottom: 0;
 }
 
 

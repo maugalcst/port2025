@@ -73,18 +73,24 @@
 }
 
 .see-repo {
-  font-size: 25px !important;
-  font-weight: 200;
-  line-height: 1 !important;
-  color: white;
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 15px;
-  padding-top: 30px;
-  cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 15px;
+    padding-top: 30px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+
+.see-repo i {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    top: 2px;
+    transition: 0.2s ease;
 }
 
 .see-repo i:hover {
   color: var(--purple-site);
-  transition: 0.2s ease;
 }

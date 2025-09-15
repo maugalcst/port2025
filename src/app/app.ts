@@ -75,7 +75,7 @@ export class App {
     {
       projectImage: '/project_images/sanpatricio.png',
       projectName: 'San Patricio E-Commerce',
-      projectDescription: 'San Patricio E-Commerce is a full-stack e-commerce platform developed specifically for the perfume industry. The backend, powered by Node.js, efficiently manages product inventory, user accounts, and order processing, while the PostgreSQL database ensures all data remains consistent and secure. On the frontend, pure JavaScript delivers a dynamic and intuitive user experience.',
+      projectDescription: 'San Patricio E-Commerce is a full-stack e-commerce platform developed specifically for the perfume industry. The backend, powered by Node.js, manages product inventory, user accounts, and ordera. On the frontend, pure JavaScript delivers a dynamic and intuitive user experience.',
       projectStack: [
         { icon: 'javascript', name: 'JavaScript'},
         { icon: 'node', name: 'Node.js'},
