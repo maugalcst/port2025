@@ -511,3 +511,44 @@ li, ul {
     border-radius: 20px;
 }
 
+.skills-and-tools {
+    position: relative;
+    background: linear-gradient(
+        180deg, 
+        #0b0b0b 0%, 
+        #232121c8 100%
+    );
+    margin: 0;
+    padding: 120px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.skills-title {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.skills-title2 {
+    background: linear-gradient(
+        90deg, 
+        var(--orange-site) 0%, 
+        var(--purple-site) 8%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 900;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-desc {
+    color: white;
+    font-family: 'JetBrains Mono', Courier, monospace;
+}
+
