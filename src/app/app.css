@@ -384,6 +384,7 @@ li, ul {
     display: flex;
     flex-direction: row;
     gap: 25px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .shadow-container {

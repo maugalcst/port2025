@@ -2,9 +2,9 @@
   <div class="nav-elements">
     <div class="logo"><img src="maugal_.svg" alt="maugal_"></div>
     <ul class="nav-links">
-      <li><a href="#"><box-icon name='home-alt' class="home-nav"></box-icon></a></li>
-      <li><a href="#"><box-icon type='solid' name='package' class="projects-nav"></box-icon></a></li>
-      <li><a href="#"><box-icon name='briefcase-alt-2' class="briefcase-nav"></box-icon></a></li>
+      <li><a href="#hero"><box-icon name='home-alt' class="home-nav"></box-icon></a></li>
+      <li><a href="#projects"><box-icon type='solid' name='package' class="projects-nav"></box-icon></a></li>
+      <li><a href="#work"><box-icon name='briefcase-alt-2' class="briefcase-nav"></box-icon></a></li>
       <li><a href="#"><box-icon name='wrench' class="wrench-nav"></box-icon></a></li>
     </ul>
   </div>
@@ -12,7 +12,7 @@
 
 <div class="blurred-circle"></div>
 
-<section class="hero">
+<section class="hero" id="hero">
   <div class="background">
     <video autoplay muted loop id="bgVideo">
       <source src="final_video.mp4" type="video/mp4" />
@@ -47,7 +47,7 @@
 </section>
 
 
-<section class="recent-projects">
+<section class="recent-projects" id="projects">
 <div class="shadow-container"></div>
   <h1 class="rp-title">RECENT <box-icon type='solid' name='package' class="projects-title"></box-icon><br></h1>
   <h1 class="rp-title2">PROJECTS</h1>
@@ -58,12 +58,12 @@
     </a>
     <div class="controls-separator"></div>
     <div class="direction-buttons">
-      <div class="left-arrow"><box-icon name='chevron-left'></box-icon></div>
-      <div class="right-arrow"><box-icon name='chevron-right'></box-icon></div>
+      <div class="left-arrow" (click)="prevSlide()"><box-icon name='chevron-left'></box-icon></div>
+      <div class="right-arrow" (click)="nextSlide()"><box-icon name='chevron-right'></box-icon></div>
     </div>
   </div>
   
-  <div class="projects-container">
+  <div class="projects-container" [style.transform]="'translateX(' + (-25 * currentSlide) + '%)'">
 
     @for (project of projects; track project.projectName) {
       <app-project-card
@@ -79,7 +79,7 @@
   <div class="white-line"></div>
 </section>
 
-<section class="work-experience">
+<section class="work-experience" id="work">
   <div class="upper-light"></div>
   <h1 class="work-title">WORK <box-icon name='briefcase-alt-2' ></box-icon><br><span>EXPERIENCE</span></h1>
   

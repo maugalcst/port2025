@@ -34,6 +34,8 @@ export interface Project {
 export class App {
   protected readonly title = signal('mi-portfolio');
 
+  currentSlide = 0;
+
   workExperience: Job[] = [
     {
       companyName: 'Epicor',
@@ -81,10 +83,19 @@ export class App {
       projectDescription: 'San Patricio E-Commerce is a full-stack e-commerce platform developed specifically for the perfume industry. The backend, powered by Node.js, manages product inventory, user accounts, and ordera. On the frontend, pure JavaScript delivers a dynamic and intuitive user experience.',
       projectStack: [
         { icon: 'javascript', name: 'JavaScript'},
-        { icon: 'node', name: 'Node.js'},
+        { icon: 'nodejs', name: 'Node.js'},
         { icon: 'postgresql', name: 'PostgreSQL'},
       ],
       projectTheme: 'sanpatricio-theme'
     },
   ]
+
+  prevSlide() {
+    this.currentSlide = this.currentSlide === 0 ? this.projects.length - 1 : this.currentSlide - 1;
+  }
+
+  nextSlide() {
+    this.currentSlide = this.currentSlide === this.projects.length - 1 ? 0 : this.currentSlide + 1;
+  }
+
 }
