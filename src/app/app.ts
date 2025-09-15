@@ -22,6 +22,7 @@ export interface Project {
   projectName: string;
   projectDescription: string;
   projectStack: Technology[];
+  projectTheme: string;
 }
 @Component({
   selector: 'app-root',
@@ -61,7 +62,8 @@ export class App {
       projectStack: [
         { icon: 'flutter', name: 'Flutter'},
         { icon: 'firebase', name: 'Firebase'}
-      ]
+      ],
+      projectTheme: 'gastrack-theme'
     },
     {
       projectImage: '/project_images/moonhike.png',
@@ -70,7 +72,8 @@ export class App {
       projectStack: [
         { icon: 'flutter', name: 'Flutter'},
         { icon: 'firebase', name: 'Firebase'}
-      ]
+      ],
+      projectTheme: 'moonhike-theme'
     },
     {
       projectImage: '/project_images/sanpatricio.png',
@@ -80,7 +83,8 @@ export class App {
         { icon: 'javascript', name: 'JavaScript'},
         { icon: 'node', name: 'Node.js'},
         { icon: 'postgresql', name: 'PostgreSQL'},
-      ]
+      ],
+      projectTheme: 'sanpatricio-theme'
     },
   ]
 }

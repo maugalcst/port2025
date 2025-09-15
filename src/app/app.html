@@ -68,6 +68,7 @@
     @for (project of projects; track project.projectName) {
       <app-project-card
         [projectImage]="project.projectImage"
+        [projectTheme]="project.projectTheme ?? ''"
         [projectName]="project.projectName"
         [projectDescription]="project.projectDescription"
         [projectStack]="project.projectStack ?? []">
