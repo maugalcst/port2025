@@ -511,12 +511,17 @@ li, ul {
     border-radius: 20px;
 }
 
+
+
+
+/* SKILLS AND TOOLS SECTION */
+
 .skills-and-tools {
     position: relative;
     background: linear-gradient(
         180deg, 
-        #0b0b0b 0%, 
-        #232121c8 100%
+        #030303 0%, 
+        #121212 100%
     );
     margin: 0;
     padding: 120px;
@@ -550,5 +555,6 @@ li, ul {
 .skills-desc {
     color: white;
     font-family: 'JetBrains Mono', Courier, monospace;
+    font-size: 22px;
+    font-weight: 400;
 }
-

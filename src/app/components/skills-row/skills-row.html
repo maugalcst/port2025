@@ -1,0 +1,18 @@
+<div class="skills-row-container">
+  <div class="skills-title">{{ title }}</div>
+  <div class="skills-marquee">
+    @for (tech of technologies; track tech.name) {
+      <div class="tech-item">
+        <i class="bx bxl-{{ tech.icon }}"></i>
+        <span>{{ tech.name }}</span>
+      </div>
+    }
+
+    @for (tech of technologies; track tech.name) {
+      <div class="tech-item">
+        <i class="bx bxl-{{ tech.icon }}"></i>
+        <span>{{ tech.name }}</span>
+      </div>
+    }
+  </div>
+</div>

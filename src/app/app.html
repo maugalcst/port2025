@@ -109,6 +109,13 @@
   <h1 class="skills-title2">TOOLS</h1>
   <h2 class="skills-desc">Some cool stuff i’ve learned :)</h2>
 
-
+  <div class="skills-rows-cont">
+    @for (row of skillRows; track row.title) {
+      <app-skills-row 
+        [title]="row.title" 
+        [technologies]="row.technologies">
+      </app-skills-row>
+    }
+  </div>
 
 </section>

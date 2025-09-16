@@ -2,6 +2,7 @@ import { Component, signal, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { WorkCard } from './components/work-card/work-card';
 import { NgClass } from '@angular/common';
 import { ProjectCard } from './components/project-card/project-card';
+import { SkillsRow } from './components/skills-row/skills-row';
 interface Job {
   companyName: string;
   companyDuration: string;
@@ -26,7 +27,7 @@ export interface Project {
 }
 @Component({
   selector: 'app-root',
-  imports: [WorkCard, ProjectCard],
+  imports: [WorkCard, ProjectCard, SkillsRow],
   templateUrl: './app.html',
   styleUrl: './app.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -88,7 +89,21 @@ export class App {
       ],
       projectTheme: 'sanpatricio-theme'
     },
-  ]
+  ];
+
+  skillRows = [
+    {
+      title: 'Web Development',
+      technologies: [
+        { name: 'HTML5', icon: 'html5' },
+        { name: 'CSS3', icon: 'css3' },
+        { name: 'JavaScript', icon: 'javascript' },
+        { name: 'TypeScript', icon: 'typescript' },
+        { name: 'Angular', icon: 'angular' },
+        { name: 'Figma', icon: 'figma' },
+      ],
+    }, 
+  ];
 
   prevSlide() {
     this.currentSlide = this.currentSlide === 0 ? this.projects.length - 1 : this.currentSlide - 1;
