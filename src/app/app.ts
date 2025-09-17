@@ -100,9 +100,32 @@ export class App {
         { name: 'JavaScript', icon: 'javascript' },
         { name: 'TypeScript', icon: 'typescript' },
         { name: 'Angular', icon: 'angular' },
-        { name: 'Figma', icon: 'figma' },
+        { name: 'WebDriverIO', icon: 'webdriverio' },
       ],
-    }, 
+    },
+    {
+      title: 'Back-end Development, Mobile & Data-related',
+      technologies: [
+        { name: 'Supabase', icon: 'supabase' },
+        { name: 'Firebase', icon: 'firebase' },
+        { name: 'Java', icon: 'java' },
+        { name: 'Python', icon: 'python' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'Flutter', icon: 'flutter' },
+        { name: 'Dart', icon: 'dart' },
+      ],
+    },
+    {
+      title: 'Other tools',
+      technologies: [
+        { name: 'Docker', icon: 'docker' },
+        { name: 'Git', icon: 'git' },
+        { name: 'VSCode', icon: 'vscode' },
+        { name: 'Intellij IDEA', icon: 'idea' },
+        { name: 'Figma', icon: 'figma' },
+        { name: 'Jiraa', icon: 'jiraa' },
+      ],
+    },
   ];
 
   prevSlide() {
