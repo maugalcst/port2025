@@ -123,7 +123,7 @@ export class App {
         { name: 'VSCode', icon: 'vscode' },
         { name: 'Intellij IDEA', icon: 'idea' },
         { name: 'Figma', icon: 'figma' },
-        { name: 'Jiraa', icon: 'jiraa' },
+        { name: 'Jira', icon: 'jira' },
       ],
     },
   ];

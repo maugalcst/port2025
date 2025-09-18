@@ -18,7 +18,7 @@
   white-space: nowrap;
   gap: 20px;
   overflow: hidden;
-  animation: scroll-left 25s linear infinite;
+  animation: scroll-left 35s ease infinite;
   height: 130px;
   width: calc(100vh * 2);
 }
