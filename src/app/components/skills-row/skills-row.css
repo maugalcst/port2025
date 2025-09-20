@@ -8,7 +8,7 @@
     color: white;
     font-family: 'Plus Jakarta Sans', monospace;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin: 20px;
     font-size: 22px;
 }
 
@@ -18,9 +18,9 @@
   white-space: nowrap;
   gap: 20px;
   overflow: hidden;
-  animation: scroll-left 35s ease infinite;
-  height: 130px;
-  width: calc(100vh * 2);
+  animation: scroll-left 35s linear infinite;
+  height: 170px;
+  width: calc(100vh * 3);
 }
 
 .skills-marquee:hover {
