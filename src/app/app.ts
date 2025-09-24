@@ -2,7 +2,6 @@ import { Component, signal, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { WorkCard } from './components/work-card/work-card';
 import { NgClass } from '@angular/common';
 import { ProjectCard } from './components/project-card/project-card';
-import { SkillsRow } from './components/skills-row/skills-row';
 interface Job {
   companyName: string;
   companyDuration: string;
@@ -27,7 +26,7 @@ export interface Project {
 }
 @Component({
   selector: 'app-root',
-  imports: [WorkCard, ProjectCard, SkillsRow],
+  imports: [WorkCard, ProjectCard],
   templateUrl: './app.html',
   styleUrl: './app.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -88,43 +87,6 @@ export class App {
         { icon: 'postgresql', name: 'PostgreSQL'},
       ],
       projectTheme: 'sanpatricio-theme'
-    },
-  ];
-
-  skillRows = [
-    {
-      title: 'Web Development',
-      technologies: [
-        { name: 'HTML5', icon: 'html5' },
-        { name: 'CSS3', icon: 'css3' },
-        { name: 'JavaScript', icon: 'javascript' },
-        { name: 'TypeScript', icon: 'typescript' },
-        { name: 'Angular', icon: 'angular' },
-        { name: 'WebDriverIO', icon: 'webdriverio' },
-      ],
-    },
-    {
-      title: 'Back-end Development, Mobile & Data-related',
-      technologies: [
-        { name: 'Supabase', icon: 'supabase' },
-        { name: 'Firebase', icon: 'firebase' },
-        { name: 'Java', icon: 'java' },
-        { name: 'Python', icon: 'python' },
-        { name: 'PostgreSQL', icon: 'postgresql' },
-        { name: 'Flutter', icon: 'flutter' },
-        { name: 'Dart', icon: 'dart' },
-      ],
-    },
-    {
-      title: 'Other tools',
-      technologies: [
-        { name: 'Docker', icon: 'docker' },
-        { name: 'Git', icon: 'git' },
-        { name: 'VSCode', icon: 'vscode' },
-        { name: 'Intellij IDEA', icon: 'idea' },
-        { name: 'Figma', icon: 'figma' },
-        { name: 'Jira', icon: 'jira' },
-      ],
     },
   ];
 

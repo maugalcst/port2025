@@ -1,6 +1,6 @@
 <nav class="navbar glass-effect">
   <div class="nav-elements">
-    <div class="logo"><img src="maugal_.svg" alt="maugal_"></div>
+    <div class="logo"><img src="sign.png" alt="maugal_"></div>
     <ul class="nav-links">
       <li><a href="#hero"><box-icon name='home-alt' class="home-nav"></box-icon></a></li>
       <li><a href="#projects"><box-icon type='solid' name='package' class="projects-nav"></box-icon></a></li>
@@ -109,13 +109,6 @@
   <h1 class="skills-title2">TOOLS</h1>
   <h2 class="skills-desc">Some cool stuff i’ve learned :)</h2>
 
-  <div class="skills-rows-cont">
-    @for (row of skillRows; track row.title) {
-      <app-skills-row 
-        [title]="row.title" 
-        [technologies]="row.technologies">
-      </app-skills-row>
-    }
-  </div>
+  
 
 </section>

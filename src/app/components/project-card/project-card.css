@@ -10,8 +10,26 @@
     transition: transform 0.3s;
 }
 
-.project:hover {
+.project:hover{
     transform: translateY(5px);
+}
+
+.project:hover > .gastrack-theme {
+    transform: translateY(5px);
+    background: linear-gradient(360deg, #ff6f0030 0%, #0a135a4e 100%) !important;
+    transition: 0.3s ease;
+}
+
+.project:hover > .moonhike-theme {
+    transform: translateY(5px);
+    background: linear-gradient(360deg, #4e00de3a 0%, #1414149d 100%) !important;
+    transition: 0.3s ease;
+}
+
+.project:hover > .sanpatricio-theme {
+    transform: translateY(5px);
+    background: linear-gradient(360deg, #164b9a67 0%, #411f29bd 100%) !important;
+    transition: 0.3s ease;
 }
 
 .project-img {
@@ -29,6 +47,7 @@
 
 .gastrack-theme {
   background: linear-gradient(360deg, #de600016 0%, #1011199d 100%) !important;
+  transition: background 0.3s ease;
 }
 
 .moonhike-theme {
@@ -36,7 +55,7 @@
 }
 
 .sanpatricio-theme {
-  background: linear-gradient(360deg, #212b2316 0%, #0000009d 100%) !important;
+  background: linear-gradient(360deg, #2d538b3d 0%, #3e26309d 100%) !important;
 }
 
 .project-name, .project-desc { 
