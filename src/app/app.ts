@@ -2,6 +2,22 @@ import { Component, signal, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { WorkCard } from './components/work-card/work-card';
 import { NgClass } from '@angular/common';
 import { ProjectCard } from './components/project-card/project-card';
+
+export interface TechSkill {
+  name: string;
+  icon: string;
+  description: string;
+}
+
+export interface SkillGroup {
+  title: string;
+  technologies: TechSkill[];
+}
+
+export interface SkillTab {
+  name: string;
+  skillGroups: SkillGroup[];
+}
 interface Job {
   companyName: string;
   companyDuration: string;
@@ -88,6 +104,50 @@ export class App {
       ],
       projectTheme: 'sanpatricio-theme'
     },
+  ];
+
+  skillsData: SkillTab[] = [
+    {
+      name: 'Frontend & Backend',
+      skillGroups: [
+        {
+          title: 'My go-to for Front-End and UI',
+          technologies: [
+            { name: 'Angular', icon: 'angular', description: 'This is a tiny description of what is Angular and why/where I use Angular as a tool.' },
+            { name: 'TypeScript', icon: 'typescript', description: 'Description for TypeScript.' },
+            { name: 'JavaScript', icon: 'javascript', description: 'Description for JavaScript.' },
+            { name: 'CSS3', icon: 'css3', description: 'Description for CSS3.' },
+            { name: 'SASS', icon: 'sass', description: 'Description for SASS.' },
+            { name: 'HTML5', icon: 'html5', description: 'Description for HTML5.' },
+          ]
+        },
+        {
+          title: 'Back-end & Databases',
+          technologies: [
+            { name: 'Java', icon: 'java', description: 'Description for Java.' },
+            { name: 'Spring Boot', icon: 'spring-boot', description: 'Description for Spring Boot.' },
+            { name: 'PostgreSQL', icon: 'postgresql', description: 'Description for PostgreSQL.' },
+            { name: 'Supabase', icon: 'supabase', description: 'Description for Supabase.' },
+            { name: 'Firebase', icon: 'firebase', description: 'Description for Firebase.' },
+          ]
+        }
+      ]
+    },
+    {
+      name: 'Other Tools',
+      skillGroups: [
+        {
+          title: 'Other Tools',
+          technologies: [
+            { name: 'Git', icon: 'git', description: 'Description for Git.' },
+            { name: 'Jira', icon: 'jira', description: 'Description for Jira.' },
+            { name: 'Azure DevOps', icon: 'azure-devops', description: 'Description for Azure DevOps.' },
+            { name: 'WebdriverIO', icon: 'webdriverio', description: 'Description for WebdriverIO.' },
+            { name: 'Zephyr', icon: 'zephyr', description: 'Description for Zephyr.' },
+          ]
+        }
+      ]
+    }
   ];
 
   prevSlide() {
