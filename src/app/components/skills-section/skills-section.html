@@ -12,25 +12,34 @@
 
   <div class="skills-content-container">
     @for (tab of skillsData; track tab.name) {
-      @if (activeTab === tab.name) {
+        @if (activeTab === tab.name) {
         <div class="skills-tab-content">
-          <div class="skills-groups">
+            <div class="skills-groups">
             @for (group of tab.skillGroups; track group.title) {
-              <div class="skills-group">
+                <div class="skills-group">
                 <h3 class="skills-group-title">{{ group.title }}</h3>
                 <div class="skills-list">
-                  @for (skill of group.technologies; track skill.name) {
-                    <div class="skill-item">
-                      <i class="bx bxl-{{ skill.icon }}"></i>
-                      <span>{{ skill.name }}</span>
+                    @for (skill of group.technologies; track skill.name) {
+                    <div
+                        class="skill-item"
+                        [class.selected]="selectedSkill?.name === skill.name"
+                        (click)="selectSkill(skill)">
+                        <i class="bx bxl-{{ skill.icon }}"></i>
+                        <span>{{ skill.name }}</span>
                     </div>
-                  }
+                    }
                 </div>
-              </div>
+                </div>
             }
-          </div>
+            </div>
         </div>
-      }
+        }
     }
-  </div>
+    </div>
+    <div class="skills-description-container">
+    @if (selectedSkill) {
+        <h3>{{ selectedSkill.name }}</h3>
+        <p>{{ selectedSkill.description }}</p>
+    }
+    </div>
 </div>
