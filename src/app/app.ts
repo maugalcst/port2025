@@ -138,13 +138,25 @@ export class App {
       name: 'Other Tools',
       skillGroups: [
         {
-          title: 'Other Tools',
+          title: 'Automation & Testing',
           technologies: [
             { name: 'Git', icon: 'git', description: 'Description for Git.' },
             { name: 'Jira', icon: 'jira', description: 'Description for Jira.' },
             { name: 'Azure DevOps', icon: 'azure-devops', description: 'Description for Azure DevOps.' },
             { name: 'WebdriverIO', icon: 'webdriverio', description: 'Description for WebdriverIO.' },
-            { name: 'Zephyr', icon: 'zephyr', description: 'Description for Zephyr.' },
+          ]
+        },
+        {
+          title: 'Mobile & Other Tools',
+          technologies: [
+            { name: 'Flutter', icon: 'flutter', description: 'Description for Flutter.' },
+            { name: 'Dart', icon: 'dart', description: 'Description for Dart.' },
+            { name: 'Python', icon: 'python', description: 'Description for Python.' },
+            { name: 'Linux', icon: 'linux', description: 'Description for Linux.' },
+            { name: 'Docker', icon: 'docker', description: 'Description for Docker.' },
+            { name: 'Visual Studio Code', icon: 'vscode', description: 'Description for VSCode.' },
+            { name: 'Intellij IDEA', icon: 'idea', description: 'Description for Intellij IDEA.' },
+            { name: 'Figma', icon: 'figma', description: 'Description for Figma.' },
           ]
         }
       ]

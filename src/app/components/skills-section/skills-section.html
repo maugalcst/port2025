@@ -1,45 +1,45 @@
-<div class="skills-tabs-container">
-  <div class="skills-tabs">
+<div class="skills-parent-wrapper">
+    <div class="skills-tabs-header">
     @for (tab of skillsData; track tab.name) {
-      <button 
+        <button 
         class="skills-tab-button"
         [class.active]="activeTab === tab.name"
         (click)="setActiveTab(tab.name)">
         {{ tab.name }}
-      </button>
-    }
-  </div>
-
-  <div class="skills-content-container">
-    @for (tab of skillsData; track tab.name) {
-        @if (activeTab === tab.name) {
-        <div class="skills-tab-content">
-            <div class="skills-groups">
-            @for (group of tab.skillGroups; track group.title) {
-                <div class="skills-group">
-                <h3 class="skills-group-title">{{ group.title }}</h3>
-                <div class="skills-list">
-                    @for (skill of group.technologies; track skill.name) {
-                    <div
-                        class="skill-item"
-                        [class.selected]="selectedSkill?.name === skill.name"
-                        (click)="selectSkill(skill)">
-                        <i class="bx bxl-{{ skill.icon }}"></i>
-                        <span>{{ skill.name }}</span>
-                    </div>
-                    }
-                </div>
-                </div>
-            }
-            </div>
-        </div>
-        }
+        </button>
     }
     </div>
-    <div class="skills-description-container">
-    @if (selectedSkill) {
-        <h3>{{ selectedSkill.name }}</h3>
-        <p>{{ selectedSkill.description }}</p>
-    }
+
+    <div class="skills-section-wrapper"> 
+        <div class="skills-content-card"> <h2 class="section-title">Technologies and tools</h2> @for (tab of skillsData; track tab.name) {
+            @if (activeTab === tab.name) {
+                <div class="skills-tab-content">
+                    <div class="skills-groups-grid"> @for (group of tab.skillGroups; track group.title) {
+                        <div class="skills-group">
+                            <h3 class="skills-group-subtitle">{{ group.title }}</h3> <div class="skills-list">
+                            @for (skill of group.technologies; track skill.name) {
+                                <div
+                                class="skill-item"
+                                [class.selected]="selectedSkill?.name === skill.name"
+                                (click)="selectSkill(skill)">
+                                <img [src]="'/skills/' + skill.icon + '.png'" alt="{{ skill.name }} logo">
+                                <span>{{ skill.name }}</span>
+                                </div>
+                            }
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            }
+            }
+        </div>
+
+        <div class="description-separator"></div> <h2 class="description-title">Description</h2> <div class="skills-description-text">
+        @if (selectedSkill) {
+            <p>{{ selectedSkill.description }}</p>
+        } @else {
+            <p>Click on a technology to see its description.</p> }
+        </div>
     </div>
 </div>
