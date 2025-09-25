@@ -1,5 +1,6 @@
 import { Component, signal, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { WorkCard } from './components/work-card/work-card';
+import { SkillsSectionComponent } from './components/skills-section/skills-section';
 import { NgClass } from '@angular/common';
 import { ProjectCard } from './components/project-card/project-card';
 
@@ -42,7 +43,7 @@ export interface Project {
 }
 @Component({
   selector: 'app-root',
-  imports: [WorkCard, ProjectCard],
+  imports: [WorkCard, ProjectCard, SkillsSectionComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
