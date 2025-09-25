@@ -1,5 +1,110 @@
+/* Estilos para el contenedor principal */
+.skills-tabs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    background-color: #0c0c0c;
+    border: 1px solid #272727;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilos para los botones de las pestañas */
 .skills-tabs {
-    background-color: white;
-    height: 30px;
-    width: 200px;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #474747;
+}
+
+.skills-tab-button {
+    background-color: transparent;
+    border: none;
+    color: #999999;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Estilo para el botón activo */
+.skills-tab-button.active {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* Estilos para los grupos de tecnologías */
+.skills-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills-group-title {
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Estilos para la lista de tecnologías */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Estilos para un solo item de tecnología */
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1a1a1a;
+    border: 1px solid #474747;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Estilo para el item seleccionado */
+.skill-item.selected {
+    background-color: var(--orange-site);
+    color: black;
+    fill: black;
+}
+
+/* Estilos para el ícono dentro del skill-item */
+.skill-item i {
+    font-size: 18px;
+    color: white;
+    transition: fill 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.skill-item.selected i {
+    color: black;
+}
+
+/* Estilos para el contenedor de la descripción */
+.skills-description-container {
+    padding: 20px;
+    border: 1px solid #474747;
+    border-radius: 12px;
+    background-color: #1a1a1a;
 }
