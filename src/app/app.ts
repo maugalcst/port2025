@@ -40,6 +40,7 @@ export interface Project {
   projectDescription: string;
   projectStack: Technology[];
   projectTheme: string;
+  repoUrl: string;
 }
 @Component({
   selector: 'app-root',
@@ -82,7 +83,8 @@ export class App {
         { icon: 'flutter', name: 'Flutter'},
         { icon: 'firebase', name: 'Firebase'}
       ],
-      projectTheme: 'gastrack-theme'
+      projectTheme: 'gastrack-theme',
+      repoUrl: 'https://github.com/maugalcst/gastrack'
     },
     {
       projectImage: '/project_images/moonhike.png',
@@ -92,7 +94,8 @@ export class App {
         { icon: 'flutter', name: 'Flutter'},
         { icon: 'firebase', name: 'Firebase'}
       ],
-      projectTheme: 'moonhike-theme'
+      projectTheme: 'moonhike-theme',
+      repoUrl: 'https://github.com/maugalcst/moonhike'
     },
     {
       projectImage: '/project_images/sanpatricio.png',
@@ -103,7 +106,8 @@ export class App {
         { icon: 'nodejs', name: 'Node.js'},
         { icon: 'postgresql', name: 'PostgreSQL'},
       ],
-      projectTheme: 'sanpatricio-theme'
+      projectTheme: 'sanpatricio-theme',
+      repoUrl: 'https://github.com/maugalcst/san-patricio-ecommerce'
     },
   ];
 
@@ -207,7 +211,7 @@ export class App {
             { 
               name: 'Linux', 
               icon: 'linux', 
-              description: 'A free and open-source operating system. I use it for its stability and security as a development environment and for deploying applications on servers.' 
+              description: 'A free and open-source operating system. I use it for its stability and security as a development environment, and also using Linux Mint distro as my main OS.' 
             },
             { 
               name: 'Docker', 

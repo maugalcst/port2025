@@ -416,7 +416,7 @@ li, ul {
     display: flex;
     justify-self: center;
     align-self: center;
-    height: 0.3px;
+    height: 0.6px;
     width: 800px;
     margin: 0;
     padding: 0;
@@ -581,4 +581,22 @@ li, ul {
     opacity: 40%;
     transform: translate(-50%, -50%);
     z-index: 1;
+}
+
+.skills-bg-video {
+  position: absolute; /* Posiciona el contenedor con respecto a su padre */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2; /* Lo envía al fondo de la sección */
+}
+
+.skills-bg-video video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: rotateX(180deg);
+  opacity: 10%;
 }

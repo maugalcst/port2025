@@ -64,7 +64,7 @@
     </div>
   </div>
   
-  <div class="projects-container" [style.transform]="'translateX(' + (-25 * currentSlide) + '%)'">
+  <div class="projects-container" [style.transform]="'translateX(' + (-28 * currentSlide) + '%)'">
 
     @for (project of projects; track project.projectName) {
       <app-project-card
@@ -72,7 +72,8 @@
         [projectTheme]="project.projectTheme ?? ''"
         [projectName]="project.projectName"
         [projectDescription]="project.projectDescription"
-        [projectStack]="project.projectStack ?? []">
+        [projectStack]="project.projectStack ?? []"
+        [repoUrl]="project.repoUrl">
       </app-project-card>
     }
 
@@ -107,13 +108,18 @@
 </section>
 
 <section class="skills-and-tools" id="tools">
-  <div class="blurred-circle-skills"></div>
-  <h1 class="skills-title">SKILLS &</h1>
-  <h1 class="skills-title2">TOOLS</h1>
-  <h2 class="skills-desc">Some cool stuff i’ve learned :)</h2>
+  <div class="skills-bg-video">
+    <video autoplay muted loop id="miVideoDeFondo">
+      <source src="skillvideo.mp4" type="video/mp4" />
+    </video>
+  </div>
   
+  <div class="skills-content-wrapper">
+    <div class="blurred-circle-skills"></div>
+    <h1 class="skills-title">SKILLS &</h1>
+    <h1 class="skills-title2">TOOLS</h1>
+    <h2 class="skills-desc">Some cool stuff i’ve learned :)</h2>
 
-  <app-skills-section [skillsData]="skillsData"></app-skills-section>
-  
-  
+    <app-skills-section [skillsData]="skillsData"></app-skills-section>
+  </div>
 </section>

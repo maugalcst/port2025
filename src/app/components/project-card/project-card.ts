@@ -15,4 +15,5 @@ export class ProjectCard {
   @Input() projectDescription: string = '';
   @Input() projectStack: Technology[] = [];
   @Input() projectTheme: string = '';
+  @Input() repoUrl: string = '';
 }
