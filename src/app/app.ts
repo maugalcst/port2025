@@ -114,22 +114,66 @@ export class App {
         {
           title: 'My go-to for Front-End and UI',
           technologies: [
-            { name: 'Angular', icon: 'angular', description: 'This is a tiny description of what is Angular and why/where I use Angular as a tool.' },
-            { name: 'TypeScript', icon: 'typescript', description: 'Description for TypeScript.' },
-            { name: 'JavaScript', icon: 'javascript', description: 'Description for JavaScript.' },
-            { name: 'CSS3', icon: 'css3', description: 'Description for CSS3.' },
-            { name: 'SASS', icon: 'sass', description: 'Description for SASS.' },
-            { name: 'HTML5', icon: 'html5', description: 'Description for HTML5.' },
+            { 
+              name: 'Angular', 
+              icon: 'angular', 
+              description: 'My primary framework for building dynamic, single-page applications. I use it for its robust structure and powerful features like two-way data binding and dependency injection.' 
+            },
+            { 
+              name: 'TypeScript', 
+              icon: 'typescript', 
+              description: 'A statically typed superset of JavaScript that enhances code quality and maintainability. I use it to build large-scale applications with fewer bugs.' 
+            },
+            { 
+              name: 'JavaScript', 
+              icon: 'javascript', 
+              description: 'The core language of the web. I use it for creating interactive web pages and for building dynamic user interfaces.' 
+            },
+            { 
+              name: 'CSS3', 
+              icon: 'css3', 
+              description: 'The style sheet language for describing the presentation of web pages. I use it to design and style the user interface of my projects.' 
+            },
+            { 
+              name: 'SASS', 
+              icon: 'sass', 
+              description: 'A CSS pre-processor that adds power and flexibility to my stylesheets. I use it to write cleaner, more modular, and reusable CSS with variables and nested rules.' 
+            },
+            { 
+              name: 'HTML5', 
+              icon: 'html5', 
+              description: 'The foundation of all web pages. I use it for structuring my content and building accessible and semantic web applications.' 
+            },
           ]
         },
         {
           title: 'Back-end & Databases',
           technologies: [
-            { name: 'Java', icon: 'java', description: 'Description for Java.' },
-            { name: 'Spring Boot', icon: 'spring-boot', description: 'Description for Spring Boot.' },
-            { name: 'PostgreSQL', icon: 'postgresql', description: 'Description for PostgreSQL.' },
-            { name: 'Supabase', icon: 'supabase', description: 'Description for Supabase.' },
-            { name: 'Firebase', icon: 'firebase', description: 'Description for Firebase.' },
+            { 
+              name: 'Java', 
+              icon: 'java', 
+              description: 'A robust, object-oriented language that I use for building scalable and high-performance backend systems.' 
+            },
+            { 
+              name: 'Spring Boot', 
+              icon: 'spring-boot', 
+              description: 'My preferred framework for building production-grade, standalone Java applications quickly and efficiently. I use it for creating microservices and RESTful APIs.' 
+            },
+            { 
+              name: 'PostgreSQL', 
+              icon: 'postgresql', 
+              description: 'A powerful, open-source relational database system. I use it for its reliability, data integrity, and advanced features for handling complex data.' 
+            },
+            { 
+              name: 'Supabase', 
+              icon: 'supabase', 
+              description: 'An open-source Firebase alternative. I use it to handle backend services, including authentication, real-time databases, and storage, for my web applications.' 
+            },
+            { 
+              name: 'Firebase', 
+              icon: 'firebase', 
+              description: 'A comprehensive mobile and web development platform. I use it for features like real-time databases, authentication, and cloud functions to build fully functional applications.' 
+            },
           ]
         }
       ]
@@ -138,25 +182,83 @@ export class App {
       name: 'Other Tools',
       skillGroups: [
         {
-          title: 'Automation & Testing',
+          title: 'Mobile & Other Tools',
           technologies: [
-            { name: 'Git', icon: 'git', description: 'Description for Git.' },
-            { name: 'Jira', icon: 'jira', description: 'Description for Jira.' },
-            { name: 'Azure DevOps', icon: 'azure-devops', description: 'Description for Azure DevOps.' },
-            { name: 'WebdriverIO', icon: 'webdriverio', description: 'Description for WebdriverIO.' },
+            { 
+              name: 'Flutter', 
+              icon: 'flutter', 
+              description: 'A UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. I use it for building cross-platform mobile apps.' 
+            },
+            { 
+              name: 'Dart', 
+              icon: 'dart', 
+              description: 'The programming language used by Flutter. I use it for building robust and performant mobile applications.' 
+            },
+            { 
+              name: 'Python', 
+              icon: 'python', 
+              description: 'A versatile language that I use for data analysis, scripting, and automating tasks. It is also a key language for machine learning and AI development.' 
+            },
+            { 
+              name: 'Git', 
+              icon: 'git', 
+              description: 'A version control system that I use to track changes in my source code. It is essential for collaborating with other developers and managing project history.' 
+            },
+            { 
+              name: 'Linux', 
+              icon: 'linux', 
+              description: 'A free and open-source operating system. I use it for its stability and security as a development environment and for deploying applications on servers.' 
+            },
+            { 
+              name: 'Docker', 
+              icon: 'docker', 
+              description: 'A platform for developing, shipping, and running applications in containers. I use it to create isolated environments for my applications, ensuring they run consistently across different machines.' 
+            },
+            { 
+              name: 'Visual Studio Code', 
+              icon: 'vscode', 
+              description: 'My preferred code editor. I use it for its powerful features, extensive extensions, and seamless integration with Git and other development tools.' 
+            },
+            { 
+              name: 'Intellij IDEA', 
+              icon: 'idea', 
+              description: 'A powerful integrated development environment for Java. I use it for its intelligent code assistance and advanced debugging tools when working on backend projects.' 
+            },
+            { 
+              name: 'Figma', 
+              icon: 'figma', 
+              description: 'A collaborative interface design tool. I use it to design user interfaces and create prototypes for my projects before writing any code.' 
+            },
           ]
         },
         {
-          title: 'Mobile & Other Tools',
+          title: 'Automation & Testing',
           technologies: [
-            { name: 'Flutter', icon: 'flutter', description: 'Description for Flutter.' },
-            { name: 'Dart', icon: 'dart', description: 'Description for Dart.' },
-            { name: 'Python', icon: 'python', description: 'Description for Python.' },
-            { name: 'Linux', icon: 'linux', description: 'Description for Linux.' },
-            { name: 'Docker', icon: 'docker', description: 'Description for Docker.' },
-            { name: 'Visual Studio Code', icon: 'vscode', description: 'Description for VSCode.' },
-            { name: 'Intellij IDEA', icon: 'idea', description: 'Description for Intellij IDEA.' },
-            { name: 'Figma', icon: 'figma', description: 'Description for Figma.' },
+            { 
+              name: 'Jira', 
+              icon: 'jira', 
+              description: 'A project management and issue-tracking tool. I use it to track tasks, manage bugs, and organize my workflow in agile development teams.' 
+            },
+            { 
+              name: 'Azure DevOps', 
+              icon: 'azure-devops', 
+              description: 'A suite of tools for software development, including version control, project management, and CI/CD pipelines. I use it for continuous integration and continuous deployment.' 
+            },
+            { 
+              name: 'WebdriverIO', 
+              icon: 'webdriverio', 
+              description: 'A next-gen browser and mobile automation framework. I use it to write end-to-end tests that ensure my applications are high quality and reliable.' 
+            },
+            { 
+              name: 'Zephyr', 
+              icon: 'zephyr', 
+              description: 'A test management tool that integrates with Jira. I use it to plan, track, and manage all my testing activities within my development projects.' 
+            },
+            {
+              name: 'Postman',
+              icon: 'postman',
+              description: 'An API platform that I use extensively in my role as a QA Automation Developer to build, test, and document APIs, ensuring their functionality and reliability for automated test cases.'
+            },
           ]
         }
       ]
